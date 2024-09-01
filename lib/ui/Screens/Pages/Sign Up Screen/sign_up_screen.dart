@@ -1,9 +1,10 @@
-import 'package:ecommerce_deltana2/ui/screens/login_screen.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_button.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_text_form_field.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_text_form_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../Login Screen/login_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});

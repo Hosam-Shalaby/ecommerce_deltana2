@@ -1,8 +1,9 @@
 import 'package:ecommerce_deltana2/utls/colors_constant.dart';
-import 'package:ecommerce_deltana2/ui/screens/phone_number_input_screen.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../Code And Phone Screen/phone_number_input_screen.dart';
 
 class OnBordingScreen extends StatefulWidget {
   const OnBordingScreen({super.key});

@@ -1,9 +1,10 @@
 import 'package:ecommerce_deltana2/utls/colors_constant.dart';
-import 'package:ecommerce_deltana2/ui/screens/select_location_screen.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+
+import '../Select Location Screen/select_location_screen.dart';
 
 class CodeVerificationScreen extends StatefulWidget {
   static const String routeName = 'CodeVerificationScreen';

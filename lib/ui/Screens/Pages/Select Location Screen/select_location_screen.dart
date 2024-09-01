@@ -1,7 +1,8 @@
-import 'package:ecommerce_deltana2/ui/screens/login_screen.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../Login Screen/login_screen.dart';
 
 class SelectLocationScreen extends StatelessWidget {
   const SelectLocationScreen({super.key});

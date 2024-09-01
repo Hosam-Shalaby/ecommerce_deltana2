@@ -1,9 +1,11 @@
-import 'package:ecommerce_deltana2/ui/screens/sign_up_screen.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_button.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_text_form_field.dart';
 import 'package:ecommerce_deltana2/ui/widgets/custom_text_form_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../Bottom Nav Bar/bottom_nav_bar.dart';
+import '../Sign Up Screen/sign_up_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -62,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                   height: 50.h,
                   width: 350.w,
                   radius: 10.r,
-                  onTap: SignUpScreen.routeName),
+                  onTap: BottomNavBar.routeName),
               SizedBox(height: 10.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
