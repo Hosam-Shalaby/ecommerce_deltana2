@@ -75,7 +75,7 @@ class SignUpScreen extends StatelessWidget {
                         'Log In',
                         style:
                             TextStyle(color: Color.fromARGB(255, 32, 109, 83)),
-                      ))
+                      )),
                 ],
               )
             ],

@@ -1,6 +1,7 @@
 import 'package:ecommerce_deltana2/ui/widgets/categories.dart';
 import 'package:ecommerce_deltana2/ui/widgets/products.dart';
 import 'package:ecommerce_deltana2/ui/widgets/search_bar.dart';
+import 'package:ecommerce_deltana2/ui/widgets/various_products.dart';
 import 'package:ecommerce_deltana2/utls/colors_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,7 +12,7 @@ class HomeTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(191, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(170, 255, 255, 255),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: SingleChildScrollView(
@@ -161,44 +162,69 @@ class HomeTab extends StatelessWidget {
               ),
               SizedBox(height: 10.h),
               const Row(children: [
-                Text('Various products'),
+                Text(
+                  'Various products',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
                 Spacer(),
                 Text('See all',
                     style: TextStyle(color: Color(ColorsConstant.mainColor)))
               ]),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  CategoryItem(
-                    image: 'assets/images/fruit.png',
-                    title: 'Fruits',
-                  ),
-                  CategoryItem(
-                    image: 'assets/images/meat.png',
-                    title: 'Meat & Fish',
-                  ),
-                  CategoryItem(
-                    image: 'assets/images/breakfast.png',
-                    title: 'Breakfast',
-                  ),
-                ],
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  CategoryItem(
-                    image: 'assets/images/snacks.png',
-                    title: 'Snacks',
-                  ),
-                  CategoryItem(
-                    image: 'assets/images/bevargers.png',
-                    title: 'Beverages',
-                  ),
-                  CategoryItem(
-                    image: 'assets/images/daily.png',
-                    title: 'Dairy',
-                  ),
-                ],
+              SizedBox(
+                // padding: const EdgeInsets.only(bottom: 10),
+                height: 250.h,
+                child: GridView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: false,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      mainAxisSpacing: 7,
+                      crossAxisSpacing: 7),
+                  children: [
+                    VariousProducts(
+                      image: 'assets/images/fruit.png',
+                      title: 'Fruits',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                    VariousProducts(
+                      image: 'assets/images/meat.png',
+                      title: 'Meat & Fish',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                    VariousProducts(
+                      image: 'assets/images/breakfast.png',
+                      title: 'Breakfast',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                    VariousProducts(
+                      image: 'assets/images/snacks.png',
+                      title: 'Snacks',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                    VariousProducts(
+                      image: 'assets/images/bevargers.png',
+                      title: 'Beverages',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                    VariousProducts(
+                      image: 'assets/images/daily.png',
+                      title: 'Dairy',
+                      fontSize: 14.sp,
+                      borderColor: Colors.white,
+                      backGroundColor: Colors.white,
+                    ),
+                  ], // 3
+                ),
               ),
             ],
           ),
