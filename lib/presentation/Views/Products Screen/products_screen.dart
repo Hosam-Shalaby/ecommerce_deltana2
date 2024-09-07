@@ -13,7 +13,7 @@ class ProductsScreen extends StatelessWidget {
       appBar: AppBar(
           title: Text(
         title,
-        style: Theme.of(context).textTheme.titleLarge,
+        style: Theme.of(context).textTheme.headlineMedium,
       )),
       body: GridView(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -2,6 +2,8 @@ import 'package:ecommerce_deltana2/utls/colors_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../Product Details screen/product_details.dart';
+
 class ProductWidget extends StatelessWidget {
   ProductWidget({super.key, this.text1, this.price, this.img});
 
@@ -23,15 +25,23 @@ class ProductWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(11),
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  ProductDetails.routeName,
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(11),
+                ),
+                padding: const EdgeInsets.all(10),
+                height: 70.h,
+                width: 150.w,
+                child: Image.asset('$img'),
               ),
-              padding: const EdgeInsets.all(10),
-              height: 70.h,
-              width: 150.w,
-              child: Image.asset('$img', fit: BoxFit.fill),
             ),
             Text('$text1', style: Theme.of(context).textTheme.titleSmall),
             const SizedBox(height: 10),

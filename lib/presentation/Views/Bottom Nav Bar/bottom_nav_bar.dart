@@ -49,13 +49,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
                               color: ColorsConstant.mainColor,
                               borderRadius: BorderRadius.circular(90)),
                           child: const ImageIcon(
-                            size: 40,
+                            size: 54,
                             AssetImage("assets/images/home.png"),
                             color: Colors.white,
                           ),
                         )
                       : const ImageIcon(
-                          size: 40,
+                          size: 54,
                           AssetImage("assets/images/home.png"),
                           color: Colors.black,
                         ),
@@ -67,14 +67,14 @@ class _BottomNavBarState extends State<BottomNavBar> {
                               color: ColorsConstant.mainColor,
                               borderRadius: BorderRadius.circular(90)),
                           child: const ImageIcon(
-                            size: 40,
-                            AssetImage("assets/images/catt.png"),
+                            size: 54,
+                            AssetImage("assets/images/cat.png"),
                             color: Colors.white,
                           ),
                         )
                       : const ImageIcon(
-                          size: 40,
-                          AssetImage("assets/images/catt.png"),
+                          size: 54,
+                          AssetImage("assets/images/cat.png"),
                           color: Colors.black,
                         ),
                   label: ''),
@@ -85,13 +85,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
                               color: ColorsConstant.mainColor,
                               borderRadius: BorderRadius.circular(90)),
                           child: const ImageIcon(
-                            size: 40,
+                            size: 54,
                             AssetImage("assets/images/menu.png"),
                             color: Colors.white,
                           ),
                         )
                       : const ImageIcon(
-                          size: 40,
+                          size: 54,
                           AssetImage("assets/images/menu.png"),
                           color: Colors.black,
                         ),
@@ -103,14 +103,14 @@ class _BottomNavBarState extends State<BottomNavBar> {
                               color: ColorsConstant.mainColor,
                               borderRadius: BorderRadius.circular(90)),
                           child: const ImageIcon(
-                            size: 40,
-                            AssetImage("assets/images/setting.png"),
+                            size: 54,
+                            AssetImage("assets/images/settt.png"),
                             color: Colors.white,
                           ),
                         )
                       : const ImageIcon(
-                          size: 40,
-                          AssetImage("assets/images/setting.png"),
+                          size: 54,
+                          AssetImage("assets/images/settt.png"),
                           color: Colors.black,
                         ),
                   label: ''),

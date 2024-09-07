@@ -1,18 +1,18 @@
 import 'package:ecommerce_deltana2/config/theme_data.dart';
-import 'package:ecommerce_deltana2/presentation/Views/On%20Boarding%20Screen/on_bording_screen.dart';
+import 'package:ecommerce_deltana2/presentation/Views/Product%20Details%20screen/product_details.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:device_preview/device_preview.dart';
-
 import 'presentation/Views/Bottom Nav Bar/bottom_nav_bar.dart';
 import 'presentation/Views/Code And Phone Screen/code_number_input_screen.dart';
 import 'presentation/Views/Code And Phone Screen/phone_number_input_screen.dart';
 import 'presentation/Views/Login Screen/login_screen.dart';
-
+import 'presentation/Views/Orders Screen/orders_screen.dart';
 import 'presentation/Views/Select Location Screen/select_location_screen.dart';
 import 'presentation/Views/Sign Up Screen/sign_up_screen.dart';
 import 'presentation/Views/Products Screen/products_screen.dart';
+import 'presentation/Views/Wish List Screen/wish_list.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,9 +49,12 @@ class MyApp extends StatelessWidget {
                 SignUpScreen.routeName: (context) => const SignUpScreen(),
                 BottomNavBar.routeName: (context) => const BottomNavBar(),
                 ProductsScreen.routeName: (context) => const ProductsScreen(),
+                ProductDetails.routeName: (context) => const ProductDetails(),
+                OrdersScreen.routeName: (context) => const OrdersScreen(),
+                WishList.routeName: (context) => const WishList(),
               },
               debugShowCheckedModeBanner: false,
-              home: const OnBordingScreen());
+              home: const BottomNavBar());
         });
   }
 }

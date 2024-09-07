@@ -7,7 +7,7 @@ class MyThemeData {
   // static Color darkPrimaryColor = const Color(0xFF141A2E);
   // static bool isDarkSelected = true;
   static ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: ColorsConstant.scaffoldColor,
+    // scaffoldBackgroundColor: ColorsConstant.scaffoldColor,
     fontFamily: 'Poppins',
     // dividerColor: lightPrimaryColor,
     // primaryColor: lightPrimaryColor,
@@ -15,7 +15,7 @@ class MyThemeData {
     textTheme: TextTheme(
         headlineMedium: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 22.sp,
+            fontSize: 20.sp,
             fontWeight: FontWeight.bold,
             color: Colors.black),
         titleMedium: TextStyle(
@@ -41,8 +41,8 @@ class MyThemeData {
         ),
         bodySmall: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 13.sp,
-            fontWeight: FontWeight.normal,
+            fontSize: 15.sp,
+            fontWeight: FontWeight.bold,
             color: ColorsConstant.orangeColor)),
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
